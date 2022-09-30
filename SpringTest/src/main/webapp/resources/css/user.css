@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#login_box{
+	margin:auto;	
+	padding: 30px;
+}
+
+.reg-page {
+    color: #555;
+    padding: 30px;
+    background: #fefefe;
+    border: solid 1px #eee;
+    box-shadow: 0 0 3px #eee;
+}
+.reg-header h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.reg-header {
+    color: #555;
+    text-align: center;
+    margin-bottom: 35px;
+    border-bottom: solid 1px #eee;
+}
+
+#submit_button{
+	font-size: 17px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.col-md-6.checkbox {
+    font-size: 17px;
+}
