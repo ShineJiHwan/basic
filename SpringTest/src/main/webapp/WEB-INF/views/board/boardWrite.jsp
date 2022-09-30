@@ -7,9 +7,9 @@
 <meta charset="UTF-8">
 <title></title>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
- <script src="${pageContext.request.contextPath}/resources/js/summernote-lite.js"></script>
-  <script src="${pageContext.request.contextPath}/resources/js/summernote-ko-KR.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+<script src="${pageContext.request.contextPath}/resources/js/summernote-lite.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/summernote-ko-KR.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="border-bottom">
