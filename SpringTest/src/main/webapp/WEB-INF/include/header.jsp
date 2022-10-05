@@ -12,9 +12,9 @@
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 		<li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
    	    <li><a href="/board" class="nav-link px-2 link-dark">게시판</a></li>
-        <li><a href="/goods" class="nav-link px-2 link-dark">상품</a></li>
+        <li><a href="/e-book" class="nav-link px-2 link-dark">e-book</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">마이페이지</a></li>
     </ul>
     <div class="col-md-3 text-end">
     	<button type="button" class="btn btn-outline-primary me-2" onClick="location.href='/login'">Login</button>
