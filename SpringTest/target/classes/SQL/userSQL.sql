@@ -12,3 +12,5 @@ create table pt_user(
 
 insert into PT_USER values('abc@naver.com','1q2w3e4r!','홍길동','010-1234-5678','인증완료',sysdate,1,0,0);
 drop table pt_user;
+select * from PT_USER
+select email from pt_user where email='abc@naver.com'

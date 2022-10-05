@@ -1,12 +1,20 @@
 package com.pinetree.dao;
 
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.pinetree.vo.UserVO;
 
+@Repository
 public class UserDAOImpl implements UserDAO{
-
+	
+	@Autowired
+	private SqlSession sqlSession;
+	
 	@Override
-	public UserVO selectLogin(UserVO u) {
-		return null;
+	public UserVO selectLogin(UserVO user) {
+		return sqlSession.selectOne("user_login",user);
 	}
 
 }

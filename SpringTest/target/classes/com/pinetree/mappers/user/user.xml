@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="User"><!-- 매퍼 네임스페이스 명을 Board로 지정. -->
+	<select id="user_login" parameterType="u" resultType="u">
+			select * from pt_user where email=#{email}
+	</select>
+</mapper>
