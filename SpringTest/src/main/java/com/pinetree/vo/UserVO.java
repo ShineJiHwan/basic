@@ -15,4 +15,7 @@ public class UserVO {
 	private String membertype;
 	private int point;
 	private String login_way;
+	
+	
+	private String domain;
 }

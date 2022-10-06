@@ -17,4 +17,14 @@ public class UserDAOImpl implements UserDAO{
 		return sqlSession.selectOne("user_login",user);
 	}
 
+	@Override
+	public String confirmEmail(UserVO uservo) {
+		return sqlSession.selectOne("confirm_email",uservo);
+	}
+
+	@Override
+	public void InsertUser(UserVO user) {
+		sqlSession.insert("userInsert",user);
+	}
+
 }

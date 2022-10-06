@@ -60,6 +60,7 @@ $("#LoginBtn").click(function(){
 		success:function(data){
 			if(data=="loginOK"){
 				alert(email+"님 환영합니다.");
+				location.href='index';
 			}else{
 				if(data=="loginno"){
 					alert("이메일 인증을 해주세요.")
@@ -67,7 +68,7 @@ $("#LoginBtn").click(function(){
 				if(data=="pwfail"){
 					alert("비밀번호가 틀렸습니다.")
 				}
-				if(data==""){
+				if(data=="NoEmail"){
 					alert("아이디가 존재하지 않습니다.")
 				}
 			}

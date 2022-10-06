@@ -5,7 +5,26 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="User"><!-- 매퍼 네임스페이스 명을 Board로 지정. -->
+	<resultMap type="com.pinetree.vo.UserVO" id="UserMap">
+		<id property="email" column="email" />
+		<result property="pw" column="pw" />
+		<result property="name" column="name" />
+		<result property="phone" column="phone" />
+		<result property="user_key" column="user_key" />
+		<result property="reg_date" column="reg_date" />
+		<result property="membertype" column="membertype" />
+		<result property="point" column="point" />
+		<result property="login_way" column="login_way" />
+	</resultMap>
+
+
 	<select id="user_login" parameterType="u" resultType="u">
 			select * from pt_user where email=#{email}
 	</select>
+	<select id="confirm_email" parameterType="u" resultType="String">
+			select email from pt_user where email=#{email}
+	</select>
+	<insert id="userInsert" parameterType="u">
+		insert into pt_user(email,pw,name,phone,user_key,reg_date,membertype,point,login_way) values(#{email},#{pw},#{name},#{phone},'회원인증',sysdate,1,0,1)
+	</insert>
 </mapper>

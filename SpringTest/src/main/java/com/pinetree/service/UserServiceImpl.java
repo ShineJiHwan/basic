@@ -17,4 +17,14 @@ public class UserServiceImpl implements UserService{
 		return this.UserDAO.selectLogin(u);
 	}
 
+	@Override
+	public String confirmEmail(UserVO uservo) {
+		return this.UserDAO.confirmEmail(uservo);
+	}
+
+	@Override
+	public void InsertUser(UserVO user) {
+		this.UserDAO.InsertUser(user);
+	}
+
 }
