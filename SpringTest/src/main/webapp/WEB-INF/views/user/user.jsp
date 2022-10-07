@@ -50,7 +50,6 @@ $("#LoginBtn").click(function(){
 			email:email,
 			pw:pw,
 	};
-	
 	$.ajax({
 		type:"post",
 		url:"PT_login",
@@ -58,8 +57,10 @@ $("#LoginBtn").click(function(){
 		dataType:"text",
 		data:JSON.stringify(userinfo),
 		success:function(data){
+			var name = '<%=(String)session.getAttribute("name")%>';
+			console.log(name);
 			if(data=="loginOK"){
-				alert(email+"님 환영합니다.");
+				alert(name+"님 환영합니다.");
 				location.href='index';
 			}else{
 				if(data=="loginno"){

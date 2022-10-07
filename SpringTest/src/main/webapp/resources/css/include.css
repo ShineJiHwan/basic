@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.user_management{
+	text-decoration:none;
+	color: black;
+}
+.user_management:hover{
+	text-decoration: revert;	
+	color: black;
+}
