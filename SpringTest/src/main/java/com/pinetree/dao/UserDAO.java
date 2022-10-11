@@ -8,4 +8,6 @@ public interface UserDAO {
 	String confirmEmail(UserVO uservo);
 
 	void InsertUser(UserVO user);
+
+	void userKey_ch(UserVO user);
 }

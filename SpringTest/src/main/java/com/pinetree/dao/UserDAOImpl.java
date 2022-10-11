@@ -27,4 +27,9 @@ public class UserDAOImpl implements UserDAO{
 		sqlSession.insert("userInsert",user);
 	}
 
+	@Override
+	public void userKey_ch(UserVO user) {	
+		sqlSession.update("userKey_ch",user);
+	}
+
 }

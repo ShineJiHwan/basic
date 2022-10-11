@@ -28,9 +28,10 @@ public class UserRestController {
 		String result = null;
 		UserVO user = userService.selectLogin(uservo);
 		if(user != null) {
-			if(user.getPw().equals(uservo.getPw())) {
+			if(!user.getUser_key().equals("인증완료")) {
+				return result="loginno";
+			}else if(user.getPw().equals(uservo.getPw())) {
 				session.setAttribute("login", user);
-				session.setAttribute("name", user.getName());
 				result = "loginOK";
 			}else {
 				result = "pwfail";

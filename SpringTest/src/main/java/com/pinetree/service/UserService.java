@@ -8,4 +8,6 @@ public interface UserService {
 	public String confirmEmail(UserVO uservo);
 
 	public void InsertUser(UserVO user);
+
+	public void userKey_ch(UserVO user);
 }

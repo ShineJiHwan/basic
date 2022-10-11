@@ -25,6 +25,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			select email from pt_user where email=#{email}
 	</select>
 	<insert id="userInsert" parameterType="u">
-		insert into pt_user(email,pw,name,phone,user_key,reg_date,membertype,point,login_way) values(#{email},#{pw},#{name},#{phone},'회원인증',sysdate,1,0,1)
+		insert into pt_user(email,pw,name,phone,user_key,reg_date,membertype,point,login_way) values(#{email},#{pw},#{name},#{phone},#{user_key},sysdate,1,0,1)
 	</insert>
+	<update id="userKey_ch" parameterType="u">
+		update pt_user set user_key='인증완료' where email=#{email} and user_key=#{user_key}
+	</update>
 </mapper>

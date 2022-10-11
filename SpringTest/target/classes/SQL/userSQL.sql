@@ -14,3 +14,4 @@ insert into PT_USER values('abc@naver.com','1q2w3e4r!','홍길동','010-1234-5678',
 drop table pt_user;
 select * from PT_USER
 select email from pt_user where email='abc@naver.com'
+delete from pt_user where name='신지환';

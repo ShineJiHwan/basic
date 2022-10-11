@@ -21,8 +21,8 @@
     	<button type="button" class="btn btn-primary" onClick="location.href='/membership'">회원가입</button>
     	</c:if>
     	<c:if test="${login ne null}">
+    		<a class="user_management  me-3" href="#">${login.name}</a>
     		<a class="user_management me-3" href="/PT_logout">로그아웃</a>
-    		<a class="user_management" href="#">마이페이지</a>
     	</c:if>
 	</div>
 </header>

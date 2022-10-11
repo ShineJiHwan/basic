@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.pinetree.service.UserService;
 import com.pinetree.vo.UserVO;
@@ -37,7 +36,15 @@ public class UserController {
 	}
 	@GetMapping("PT_logout")
 	public String logout(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
-		session.removeAttribute("login");
+		//session.removeAttribute("login");
+		session.invalidate();
+		return "index";
+	}
+	
+	@GetMapping
+	public String membership_email_ch(UserVO user) {
+		user.getEmail();
+		userService.userKey_ch(user);
 		return "index";
 	}
 	

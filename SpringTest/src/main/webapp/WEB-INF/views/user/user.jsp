@@ -60,17 +60,17 @@ $("#LoginBtn").click(function(){
 			var name = '<%=(String)session.getAttribute("name")%>';
 			console.log(name);
 			if(data=="loginOK"){
-				alert(name+"님 환영합니다.");
 				location.href='index';
 			}else{
 				if(data=="loginno"){
-					alert("이메일 인증을 해주세요.")
+					alert("이메일 인증을 해주세요.");
+					location.href='index';
 				}
 				if(data=="pwfail"){
-					alert("비밀번호가 틀렸습니다.")
+					alert("비밀번호가 틀렸습니다.");
 				}
 				if(data=="NoEmail"){
-					alert("아이디가 존재하지 않습니다.")
+					alert("아이디가 존재하지 않습니다.");
 				}
 			}
 			

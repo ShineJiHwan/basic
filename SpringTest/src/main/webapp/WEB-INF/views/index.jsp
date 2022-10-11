@@ -39,7 +39,7 @@
 		
 	<!-- ../resources/img/indeximg.jpeg -->	
 	<!-- ../resources/img/indeximg2.jpg -->	
-		
+		<img alt="로고 이미지" src="resources/img/logo.png">
 		<button type="button" class="btn btn-dark">시작하기</button>
 	</div>
 </body>
